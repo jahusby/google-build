@@ -30,7 +30,7 @@ export async function getServerSideProps(context) {
   const GOOGLE_API = process.env.GOOGLE_API;
   const CONTEXT_KEY = process.env.CONTEXT_KEY;
   /* set dummydata to false to use api */
-  const useDummyData = true;
+  const useDummyData = false;
   const startIndex = context.query.start || "0";
 
   const data = useDummyData
